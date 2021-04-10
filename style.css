@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+
+.wall {
+  height: 23mm;
+  background-color: bisque;
+  position: relative;
+  border: 0.1mm solid black;
+}
+.wall-window,
+.wall-hatch {
+  width: 20.3mm;
+}
+
+.wall-hob,
+.wall-door {
+  width: 21.74mm;
+}
+
+.window {
+  width: 11.2mm;
+  height: 8.7mm;
+  background-color: #000;
+  position: absolute;
+  left: 4.63mm;
+  top: 3mm;
+  z-index: 4;
+}
+.counter {
+  height: 0.3mm;
+  background-color: blueviolet;
+  position: absolute;
+  bottom: 8.68mm;
+}
+.wall-window > .counter {
+  width: 20.3mm;
+}
+.wall-hob > .counter {
+  width: 21.74mm;
+}
+.wall-hatch > .counter {
+  width: 13.4mm;
+  z-index: 2;
+}
+.wall-door > .counter {
+  width: 6.97mm;
+  z-index: 2;
+}
+
+.hatch {
+  width: 11.75mm;
+  height: 8.45mm;
+  position: absolute;
+  bottom: 8.68mm;
+  background-color: black;
+}
+
+.fridge {
+  height: 19mm;
+  width: 6.5mm;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: silver;
+  background-image: url(fridgeFront.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.oven {
+  height: 5.95mm;
+  width: 5.6mm;
+  position: absolute;
+  right: 8.5mm;
+  bottom: 2.7mm;
+  background-color: slategray;
+  z-index: 5;
+  background-image: url(ovenFront.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+.wall-hatch > .drawers {
+  width: 2mm;
+  height: 8.68mm;
+  background-color: tomato;
+  position: absolute;
+  bottom: 0;
+  right: 6.5mm;
+}
+
+.overlap {
+  height: 8.68mm;
+  width: 5.3mm;
+  background-color: hsl(180, 100%, 15%);
+  position: absolute;
+  bottom: 0;
+}
+
+.wall-hatch > .overlap {
+  left: 0;
+}
+.wall-window > .overlap {
+  right: 0;
+}
+.wall-hob > .overlap-right {
+  right: 0;
+  width: 5.8mm;
+}
+
+.wall-door > .fridge {
+  width: 6.96mm;
+  bottom: 0;
+  left: 0;
+  background-image: none;
+}
+
+.doorway {
+  width: 8.2mm;
+  height: 23mm;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 6.96mm;
+}
+
+.removed {
+  width: 6.47mm;
+  height: 14mm;
+  position: absolute;
+  background-color: white;
+  right: 0;
+}
+
+.washer {
+  height: 8.4mm;
+  width: 6.5mm;
+  position: absolute;
+  bottom: 0;
+  background-color: slategrey;
+}
+
+.sink,
+.drainer {
+  background-color: slategrey;
+  position: absolute;
+}
+.sink {
+  height: 1.52mm;
+  width: 7.6mm;
+  left: 6.5mm;
+  bottom: 7.5mm;
+}
+.drainer {
+  height: 0.3mm;
+  width: 4mm;
+  left: 2.5mm;
+  bottom: 8.73mm;
+}
+
+.cupboard-upper {
+  height: 7.2mm;
+  position: absolute;
+  background-color: hsl(147, 69%, 72%);
+}
+
+.wall-hob > .cupboard-upper {
+  width: 21.74mm;
+}
+.wall-hatch > .cupboard-upper {
+  width: 13.5mm;
+}
+.cupboard-freezer {
+  height: 4mm;
+  width: 6.5mm;
+  right: 0;
+}
