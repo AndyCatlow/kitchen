@@ -37,6 +37,7 @@ body {
   background-color: blueviolet;
   position: absolute;
   bottom: 8.68mm;
+  z-index: 3;
 }
 .wall-window > .counter {
   width: 20.3mm;
@@ -87,13 +88,32 @@ body {
   background-size: contain;
   background-position: top;
 }
-.wall-hatch > .drawers {
+.wall-hatch > .drawer-tall {
   width: 2mm;
   height: 8.68mm;
-  background-color: tomato;
+  background-color: teal;
   position: absolute;
   bottom: 0;
   right: 6.5mm;
+}
+.drawer {
+  position: absolute;
+  bottom: 0.1mm;
+  background-color: teal;
+  border: 0.1mm solid grey;
+}
+.wall-hatch > .drawer {
+  width: 5.6mm;
+  height: 2.6mm;
+  right: 8.5mm;
+}
+.wall-window > .drawer {
+  left: 6.55mm;
+  right: 5.45mm;
+  height: 4.24mm;
+}
+.drawer-upper {
+  bottom: 4.25mm;
 }
 
 .overlap {
@@ -121,6 +141,9 @@ body {
   left: 0;
   background-image: none;
 }
+.wall-door > .cupboard-upper {
+  width: 5mm;
+}
 
 .doorway {
   width: 8.2mm;
@@ -145,6 +168,10 @@ body {
   position: absolute;
   bottom: 0;
   background-color: slategrey;
+  background-image: url(washingMachineFront.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 }
 
 .sink,
@@ -181,4 +208,23 @@ body {
   height: 4mm;
   width: 6.5mm;
   right: 0;
+}
+
+.cupboard-lower {
+  height: 8.58mm;
+  background-color: teal;
+  position: absolute;
+  bottom: 0.1mm;
+  border: 0.1mm solid grey;
+}
+
+.wall-hob > .cupboard-lower {
+  width: 5.32mm;
+}
+
+.wall-hob > .cl-left {
+  left: 5.3mm;
+}
+.wall-hob > .cl-right {
+  right: 5.8mm;
 }
